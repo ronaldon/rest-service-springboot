@@ -1,0 +1,17 @@
+spring:
+  profiles: production
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+  jackson:
+    serialization:
+      write_dates_as_timestamps: false
+
+server:
+  port: 8080
+
+endpoints:
+  enabled: false
+  health:
+    enabled: true
